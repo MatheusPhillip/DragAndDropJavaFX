@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="953.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="draganddrop.FXMLDocumentController">
+   <children>
+      <GridPane gridLinesVisible="true" layoutX="14.0" layoutY="311.0" prefHeight="81.0" prefWidth="331.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="setaDireita" fitHeight="82.0" fitWidth="85.0" onDragDetected="#handleDragDetection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../img/direita-seta.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="setaCima" fitHeight="84.0" fitWidth="81.0" onDragDetected="#handleDragDetection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../img/cima-seta.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="setaEsquerda" fitHeight="93.0" fitWidth="101.0" onDragDetected="#handleDragDetection" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/esquera-seta.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="setaBaixo" fitHeight="79.0" fitWidth="160.0" onDragDetected="#handleDragDetection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../img/baixo-seta.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <GridPane gridLinesVisible="true" layoutX="439.0" layoutY="104.0" prefHeight="192.0" prefWidth="258.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fx:id="target1" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="target2" fitHeight="46.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+            <ImageView fx:id="target3" fitHeight="48.0" fitWidth="42.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+            <ImageView fx:id="target4" fitHeight="48.0" fitWidth="41.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+            <ImageView fx:id="target5" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" />
+            <ImageView fx:id="target6" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" />
+            <ImageView fx:id="target7" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+            <ImageView fx:id="target8" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ImageView fx:id="target9" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ImageView fx:id="target10" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ImageView fx:id="target11" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <ImageView fx:id="target12" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <ImageView fx:id="target13" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+            <ImageView fx:id="target14" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView fx:id="target15" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ImageView fx:id="target16" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ImageView fx:id="target17" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <ImageView fx:id="target18" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <ImageView fx:id="target19" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
+            <ImageView fx:id="target20" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ImageView fx:id="target21" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ImageView fx:id="target22" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <ImageView fx:id="target23" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <ImageView fx:id="target24" fitHeight="43.0" fitWidth="40.0" onDragDropped="#handleImageDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button fx:id="buttonClean" layoutX="541.0" layoutY="336.0" mnemonicParsing="false" onAction="#Reset" text="Reset" />
+   </children>
+</AnchorPane>
